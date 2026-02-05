@@ -1,27 +1,33 @@
-import React from 'react'
-import { Image, StyleSheet, View } from 'react-native'
+import React from "react";
+import { Image, Pressable, StyleSheet, View } from "react-native";
 
 const Footer = () => {
   return (
     <View style={styles.container}>
-        <Image source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" }} style={{ width: 30, height: 30 }} />
-        <Image source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" }} style={{ width: 30, height: 30 }} />
-        <Image source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" }} style={{ width: 30, height: 30 }} />
-        <Image source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" }} style={{ width: 30, height: 30 }} />
-        <Image source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" }} style={{ width: 30, height: 30 }} />
+      <Pressable><Image style={styles.icon} source={require("../assets/images/instagram/home-icon.webp")}/></Pressable>
+      <Pressable><Image style={styles.icon} source={require("../assets/images/instagram/search-icon.webp")}/></Pressable>
+      <Pressable><Image style={styles.icon} source={require("../assets/images/instagram/reels-icon.webp")}/></Pressable>
+      <Pressable><Image style={styles.icon} source={require("../assets/images/instagram/shop-icon.webp")}/></Pressable>
+      <Pressable><Image style={styles.icon} source={require("../assets/images/instagram/profile-icon.png")}/></Pressable>
     </View>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
 
 const styles = StyleSheet.create({
-    container: {
-        height: 60,
-        backgroundColor: 'black',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 20,
-    }
-})
+  container: {
+    height: 60,
+    backgroundColor: "white",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: 20,
+    paddingLeft: 30,
+    paddingRight: 30,
+  },
+  icon: {
+    width: 25,
+    height: 25,
+  },
+});
