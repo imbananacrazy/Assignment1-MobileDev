@@ -34,7 +34,6 @@ export default function Index() {
           {/* HEADER (teammate) */}
           <Header />
 
-          {/* ===== YOUR CONTRIBUTION STARTS HERE ===== */}
           <View style={styles.content}>
             {/* Profile row */}
             <View style={styles.profileRow}>
@@ -84,7 +83,6 @@ export default function Index() {
               showsVerticalScrollIndicator={false}
             />
           </View>
-          {/* ===== YOUR CONTRIBUTION ENDS HERE ===== */}
 
           {/* ALERT + FOOTER (teammate) */}
           <View style={styles.bottomArea}>
