@@ -1,7 +1,12 @@
+// Footer Component that renders a static Instagram-style bottom navigation bar
+// Icons are wrapped in Pressable for future navigation support
 import React from "react";
 import { Image, Pressable, StyleSheet, View } from "react-native";
 
-const Footer = () => {
+// Stateless footer navigation bar
+// Currently visual-only: navigation handlers can be added later
+const Footer = () => { 
+  {/*Footer Container golding navigation icons*/}
   return (
     <View style={styles.container}>
       <Pressable><Image style={styles.icon} source={require("../assets/images/instagram/home-icon.webp")}/></Pressable>
@@ -14,7 +19,7 @@ const Footer = () => {
 };
 
 export default Footer;
-
+// Styles for footer layout and icon sizing
 const styles = StyleSheet.create({
   container: {
     height: 60,
