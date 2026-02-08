@@ -6,16 +6,26 @@ import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 // Action icons are visual placeholders for future functionality
 const Header = () => {
   return (
-    {/* Header container with left action, centered titles, and right action */}
     <View style={styles.container}>
-    {/* Action icons wrapped in Pressable for future navigation or actions */}
-        <Pressable><Image style={styles.pressable} source={require("../assets/images/instagram/new-post-icon.webp")}/></Pressable>
-    {/* Group name and username displayed in the center */}
+      {/* Header container with left action, centered titles, and right action */}
+      {/* Action icons wrapped in Pressable for future navigation or actions */}
+      <Pressable>
+        <Image
+          style={styles.pressable}
+          source={require("../assets/images/instagram/new-post-icon.webp")}
+        />
+      </Pressable>
+      {/* Group name and username displayed in the center */}
       <View style={styles.titles}>
         <Text style={styles.title}>Group Profile</Text>
         <Text style={styles.subtitle}>ootd_everyday</Text>
       </View>
-      <Pressable><Image style={styles.pressable} source={require("../assets/images/instagram/new-post-icon.webp")}/></Pressable>
+      <Pressable>
+        <Image
+          style={styles.pressable}
+          source={require("../assets/images/instagram/new-post-icon.webp")}
+        />
+      </Pressable>
     </View>
   );
 };
@@ -48,5 +58,5 @@ const styles = StyleSheet.create({
     height: 25,
     marginLeft: 15,
     marginRight: 15,
-},
+  },
 });

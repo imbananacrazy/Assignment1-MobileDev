@@ -4,13 +4,7 @@
 
 import Footer from "@/components/footer";
 import React from "react";
-import {
-  FlatList,
-  Image,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { FlatList, Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import AlertButton from "../components/alert-button";
 import Header from "../components/header";
@@ -33,8 +27,8 @@ const GRID_DATA = [
 
 export default function Index() {
   return (
-    {/* Safe area handling for notches UI */}
     <SafeAreaProvider>
+      {/* Safe area handling for notches UI */}
       <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
         <View style={{ flex: 1 }}>
           {/* HEADER (teammate) */}
@@ -91,7 +85,6 @@ export default function Index() {
             />
           </View>
 
-         
           {/* Fixed bottom section containing alert button and footer navigation */}
           <View style={styles.bottomArea}>
             <View style={styles.alertWrapper}>
