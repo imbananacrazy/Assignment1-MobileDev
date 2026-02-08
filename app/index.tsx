@@ -1,3 +1,4 @@
+// Group profile screen layout inspired by Instagram-style UI
 // Icons pulled from https://uxwing.com/?s=instagram & https://www.flaticon.com/free-icons/instagram.
 // We do not own any of the icons
 
@@ -14,6 +15,8 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import AlertButton from "../components/alert-button";
 import Header from "../components/header";
 
+// Mock image data used to stimulate a post grid
+
 const GRID_DATA = [
   { id: "1", uri: "https://picsum.photos/400/400?1" },
   { id: "2", uri: "https://picsum.photos/400/400?2" },
@@ -26,8 +29,11 @@ const GRID_DATA = [
   { id: "9", uri: "https://picsum.photos/400/400?9" },
 ];
 
+// Main group profile screen combining header, profile info, post grid, and footer
+
 export default function Index() {
   return (
+    {/* Safe area handling for notches UI */}
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
         <View style={{ flex: 1 }}>
@@ -37,12 +43,13 @@ export default function Index() {
           <View style={styles.content}>
             {/* Profile row */}
             <View style={styles.profileRow}>
+              {/* Group avatar with outer ring and inner initials */}
               <View style={styles.avatarOuter}>
                 <View style={styles.avatarInner}>
                   <Text style={styles.avatarText}>OO{"\n"}TD</Text>
                 </View>
               </View>
-
+              {/* Group Statistics: posts, members, and admins */}
               <View style={styles.statsRow}>
                 <View style={styles.statItem}>
                   <Text style={styles.statNumber}>53</Text>
@@ -64,7 +71,7 @@ export default function Index() {
             <Text style={styles.bioLine}>Fit check! 👕</Text>
             <Text style={styles.bioLine}>You know we’ll hype you up.</Text>
 
-            {/* Member dropdown */}
+            {/* Member status button (dropdown functionality to be added) */}
             <View style={styles.memberBtn}>
               <Text style={styles.memberText}>Member</Text>
               <Text style={styles.memberArrow}>⌄</Text>
@@ -84,7 +91,8 @@ export default function Index() {
             />
           </View>
 
-          {/* ALERT + FOOTER (teammate) */}
+         
+          {/* Fixed bottom section containing alert button and footer navigation */}
           <View style={styles.bottomArea}>
             <View style={styles.alertWrapper}>
               <AlertButton />
@@ -96,7 +104,7 @@ export default function Index() {
     </SafeAreaProvider>
   );
 }
-
+// Styles for group profile screen layout and UI elements
 const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 16,
