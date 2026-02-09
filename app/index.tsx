@@ -71,7 +71,7 @@ export default function Index() {
               <Text style={styles.memberArrow}>⌄</Text>
             </View>
 
-            {/* Posts grid */}
+            {/* Posts grid  rendered using FlatList for performance*/}
             <FlatList
               data={GRID_DATA}
               keyExtractor={(item) => item.id}
