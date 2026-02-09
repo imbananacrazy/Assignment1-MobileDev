@@ -1,5 +1,5 @@
 // Group profile screen layout inspired by Instagram-style UI
-// Icons pulled from https://uxwing.com/?s=instagram & https://www.flaticon.com/free-icons/instagram.
+// Icons pulled from https://uxwing.com/ & https://www.flaticon.com/.
 // We do not own any of the icons
 
 import Footer from "@/components/footer";

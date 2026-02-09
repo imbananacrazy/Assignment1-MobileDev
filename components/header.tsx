@@ -12,7 +12,7 @@ const Header = () => {
       <Pressable>
         <Image
           style={styles.pressable}
-          source={require("../assets/images/instagram/new-post-icon.webp")}
+          source={require("../assets/images/instagram/left.png")}
         />
       </Pressable>
       {/* Group name and username displayed in the center */}
